@@ -69,7 +69,7 @@ public class Clinica {
 	public void agregarConsulta(java.time.LocalDate fecha, String sintomas, int temperatura, float peso,
 			float estatura) {
 		// Start of user code for method agregarConsulta
-		this.fecha.add(fecha);
+		this.fecha.add(LocalDate.now());
 		this.Sintomas.add(sintomas);
 		this.temperatura.add(temperatura);
 		this.peso.add(peso);
@@ -85,7 +85,7 @@ public class Clinica {
 	 */
 	public String receta(String medicamentos, String recomendaciones) {
 		// Start of user code for method receta
-		String receta = "Sin nada que mostrar";
+		String receta = "Sin datos";
 		if(medicamentos!=null  ||recomendaciones!=null){
 			receta="Medicamentos: "+ medicamentos+" "+" Recomendaciones: "+ recomendaciones;
 		}
